@@ -21,7 +21,7 @@ class ProduitController extends Controller
      */
     public function create()
     {
-        //
+        return view ('produits.create');
     }
 
     /**
@@ -34,7 +34,7 @@ class ProduitController extends Controller
             'prix' => 'required|numeric',
         ]);
         Produit::create($request->all());
-        return redirect()->route('produits.index');
+        return redirect()->route('produit.index');
     }
 
     /**
@@ -47,7 +47,7 @@ class ProduitController extends Controller
             'prix' => 'required|numeric',
         ]);
     $produit->update($request->all());
-        return redirect()->route('produits.index');
+        return redirect()->route('produit.index');
     }
 
     /**
@@ -56,12 +56,9 @@ class ProduitController extends Controller
     public function destroy(Produit $produit)
     {
         $produit->delete();
-        return redirect()->route('produis.index');
+        return redirect()->route('produit.index');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         //
@@ -72,22 +69,8 @@ class ProduitController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $produit=Produit::find($id);
+        return view('produits.edit', compact('produit'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }
