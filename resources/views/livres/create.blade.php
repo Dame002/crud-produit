@@ -30,7 +30,7 @@
         <form method="POST" action="{{ route('livre.store') }}">
             @csrf
             <div class="form-group">
-                <label for="titre">Titre</label>
+                <label php artisan make:model Produit -mfor="titre">Titre</label>
                 <input type="text" class="form-control" id="titre" name="titre" required>
             </div>
             <div class="form-group">
