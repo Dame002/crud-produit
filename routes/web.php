@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProduitController;
-use App\Http\Controllers\LivreController;
-use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\CoursController;
+use App\Http\Controllers\LivreController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\BoutiqueController;
+use App\Http\Controllers\EtudiantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +28,6 @@ Route::resource('livre', LivreController::class);
 Route::resource('etudiant', EtudiantController::class);
 Route::resource('cours', CoursController::class);
 Route::resource('boutique', BoutiqueController::class);
+Route::resource('contact', ContactController::class);
 
 

@@ -45,7 +45,7 @@
                 <input type="text" class="form-control" id="tel" name="tel" value="{{ $boutique->tel }}" required>
             </div>
             <div class="form-group text-center">
-                <button type="submit" class="btn btn-success">Modifier</button>
+                <button type="submit" class="btn btn-dark">Modifier</button>
             </div>
         </form>
     </div>

@@ -28,7 +28,7 @@
 <body>
     <div class="container">
         <h2 class="text-center mb-4">Liste des Boutiques</h2>
-        <a href="{{ route('boutique.create') }}" class="btn btn-success mb-3 d-block mx-auto" style="width: fit-content;">Ajouter une boutique</a>
+        <a href="{{ route('boutique.create') }}" class="btn btn-dark mb-3 d-block mx-auto" style="width: fit-content;">Ajouter une boutique</a>
 
         <table class="table table-bordered table-striped">
             <thead class="thead-light">

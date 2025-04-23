@@ -46,7 +46,7 @@
                 <input type="text" class="form-control" id="tel" name="tel" required>
             </div>
             <div class="form-group text-center">
-                <button type="submit" class="btn btn-success">Enregistrer</button>
+                <button type="submit" class="btn btn-dark">Enregistrer</button>
             </div>
         </form>
     </div>
